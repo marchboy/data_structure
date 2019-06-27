@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Array",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Array.src.Array",
+            "projectName": "java_proj_2ee9aeea"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - java_test",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Array.src.zz_java_test",
+            "projectName": "java_proj_2ee9aeea"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Array.src.Main",
+            "projectName": "java_proj_2ee9aeea"
+        }
+    ]
+}
