@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Student",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Array.src.Student",
+            "projectName": "java_proj_2ee9aeea"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Array",
             "request": "launch",
             "mainClass": "play_with_data_structure.Array.src.Array",

@@ -17,7 +17,8 @@ public class Main {
         //     System.out.println(score);
         // }
 
-        Array arr = new Array(20);
+        // Array arr = new Array(20);
+        ArrayGeneric<Integer> arr = new ArrayGeneric<>(20);
         for (int i = 0; i < 10; i++){
             arr.addLast(i);
         }
