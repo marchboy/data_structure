@@ -23,3 +23,4 @@ public class Student{
         System.out.println("All Student scores: " + arr);
     }
 }
+
