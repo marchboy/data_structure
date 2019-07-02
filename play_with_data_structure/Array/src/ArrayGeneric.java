@@ -6,7 +6,7 @@ public class ArrayGeneric<E>{
 
     // 构造函数，传入数组的容量capacity构造Array;
     public ArrayGeneric(int capacity) {
-        data = (E[])new Object[capacity];
+        data = (E[]) new Object[capacity];
         size = 0;
     }
 
@@ -46,13 +46,16 @@ public class ArrayGeneric<E>{
 
     // 在第index个位置插入一个新元素e
     public void add(int index, E e) {
-        if (size == data.length){
-            throw new IllegalArgumentException("AddLast Failed. Array is full.");
-        }
             
         if (index < 0 || index > size){
             throw new IllegalArgumentException("AddLast Failed. Require index >=0 and index < size");
         }
+
+        if (size == data.length){
+            // throw new IllegalArgumentException("AddLast Failed. Array is full.");
+            resize(2 * data.length);
+        }
+
         for(int i = size - 1; i >= index; i --){
             data[i + 1] = data[i];
         }
@@ -61,6 +64,15 @@ public class ArrayGeneric<E>{
         size++;
 
     }
+    
+    public void resize(int newCapacity){
+        E[] newData = (E[]) new Object[newCapacity];
+        for(int i = 0; i < size; i++)
+            newData[i] = data[i];
+        data = newData;
+    } 
+
+
 
     // 获取index位置的元素
     public E get(int index){
@@ -104,6 +116,11 @@ public class ArrayGeneric<E>{
             data[i-1] = data[i];
         size --;
         data[size] = null;
+
+        if (size == data.length / 4 && data.length / 2 != 0){
+            resize(data.length / 2);
+        }
+
         return ret;
     }
 

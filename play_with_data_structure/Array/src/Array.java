@@ -54,6 +54,7 @@ public class Array{
             throw new IllegalArgumentException("AddLast Failed. Require index >=0 and index < size");
         }
         for(int i = size - 1; i >= index; i --){
+
             data[i + 1] = data[i];
         }
 

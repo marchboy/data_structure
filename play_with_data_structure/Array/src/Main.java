@@ -18,7 +18,7 @@ public class Main {
         // }
 
         // Array arr = new Array(20);
-        ArrayGeneric<Integer> arr = new ArrayGeneric<>(20);
+        ArrayGeneric<Integer> arr = new ArrayGeneric<>();
         for (int i = 0; i < 10; i++){
             arr.addLast(i);
         }
@@ -28,6 +28,9 @@ public class Main {
         System.out.println(arr);
 
         arr.addFirst(-1);
+        System.out.println(arr);
+
+        arr.addLast(1000);
         System.out.println(arr);
 
         arr.remove(2);
