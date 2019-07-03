@@ -4,6 +4,12 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
+            "mainClass": "play_with_data_structure.Stack.src.Main"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
             "mainClass": "play_with_data_structure.Array.src.Main"
         },
         {
