@@ -4,6 +4,15 @@ public class ArrayGeneric<E>{
     private E[] data;
     private int size;
 
+    // -------------------------------------------------
+    /*
+    1、构造函数的命名必须和类名完全相同。
+    2、Java中普通函数可以和构造函数同名，但是必须带有返回值。    
+    3、构造函数的功能主要用于在类的对象创建时定义初始化的状态。它没有返回值，也不能用void来修饰。
+    4、构造函数不能被直接调用，必须通过new运算符在创建对象时才会自动调用；而一般的方法是在程序执行到它的时候被调用的；
+    */
+    //--------------------------------------------------
+
     // 构造函数，传入数组的容量capacity构造Array;
     public ArrayGeneric(int capacity) {
         data = (E[]) new Object[capacity];
@@ -14,6 +23,9 @@ public class ArrayGeneric<E>{
     public ArrayGeneric() {
         this(10);
     }
+
+    // -------------------------------------------------
+
 
     // 获取数组中元素个数;
     public int getSize(){
@@ -53,7 +65,9 @@ public class ArrayGeneric<E>{
 
         if (size == data.length){
             // throw new IllegalArgumentException("AddLast Failed. Array is full.");
+            System.out.println("size before: " + size);
             resize(2 * data.length);
+            System.out.println("size after: " + size);
         }
 
         for(int i = size - 1; i >= index; i --){

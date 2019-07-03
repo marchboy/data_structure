@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Array.src.Main"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StackMain",
             "request": "launch",
             "mainClass": "play_with_data_structure.Stack.src.Main",
