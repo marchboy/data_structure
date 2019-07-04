@@ -70,7 +70,7 @@ public class ArrayGeneric<E>{
         for(int i = 0; i < size; i++)
             newData[i] = data[i];
         data = newData;
-    } 
+    }
 
 
     // 获取index位置的元素

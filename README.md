@@ -59,4 +59,17 @@ boolean isEmpty() ：栈是否为空
 
 递归的应用
 
+## 3、队列
+先进先出的队列：Fisrt in Fist Out（FIFO）
 
+interface Queue<E> 
+
+void enqueue(E)  
+
+E dequede()
+
+E getFront()
+
+int getSize()
+
+boolean isEmpty
