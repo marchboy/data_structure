@@ -64,15 +64,15 @@ boolean isEmpty() ：栈是否为空
 
 interface Queue<E> 
 
-void enqueue(E)  
+void enqueue(E) : 入队
 
-E dequede()
+E dequede() : 出队
 
-E getFront()
+E getFront() : 获取队首元素
 
-int getSize()
+int getSize() : 获取队尾元素
 
-boolean isEmpty
+boolean isEmpty : 判断队列是否为空
 
 ## 4、循环队列
 
