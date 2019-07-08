@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Stack.src.Solution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayQueue",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Stack.src.ArrayQueue"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArrayQueue",
             "request": "launch",
             "mainClass": "play_with_data_structure.Stack.src.ArrayQueue",
