@@ -73,3 +73,12 @@ E getFront()
 int getSize()
 
 boolean isEmpty
+
+## 4、循环队列
+
+front == tail 队列为空
+
+（tail + 1）% c == front 队列满，capacity浪费一个空间
+
+
+# 三、链表

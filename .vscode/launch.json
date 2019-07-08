@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LoopQueue",
+            "request": "launch",
+            "mainClass": "play_with_data_structure.Stack.src.LoopQueue",
+            "projectName": "java_proj_2ee9aeea"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArrayQueue",
             "request": "launch",
             "mainClass": "play_with_data_structure.Stack.src.ArrayQueue",
