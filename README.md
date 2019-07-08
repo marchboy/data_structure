@@ -80,7 +80,7 @@ front == tail 队列为空
 
 （tail + 1）% c == front 队列满，capacity浪费一个空间
 
-广度有先遍历
+广度优先遍历
 
 
 # 三、链表
