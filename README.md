@@ -45,11 +45,11 @@ O(1) O(n) O(log n) O(n^2)
 
 ### 2、栈的应用
 
-常见的Undo操作，撤销原理：靠栈的原理实现 
+常见的Undo操作，撤销原理：靠栈的原理实现
 
 程序调用的系统栈：A()--B()--C()
 
-Interface Stack<E> ------ArrayStack<E>
+Interface Stack\<E>------ArrayStack\<E>
 
 void push(E) ：入栈
 
@@ -67,7 +67,7 @@ boolean isEmpty() ：栈是否为空
 
 先进先出的队列：Fisrt in Fist Out（FIFO）
 
-interface Queue<E> 
+interface Queue\<E>
 
 void enqueue(E) : 入队
 
